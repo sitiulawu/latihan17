@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>jQery</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <h1>
+    jQery
+  </h1>
+  <h2>
+  bagaimana mengunakan jQery
+  </h2>
+  <ol>
+    <li>
+      menambahkan jQery ke document HTML
+    </li>
+    <li>
+      mengunakan jQery selector dan action
+    </li>
+  </ol>
+  <p>
+    sintaks dasar jQery adalah:
+    <code>$(selector). action ()</code>
+  </p>
+  <h2>
+    contoh
+  </h2>
+  <p id="elemen1">
+    menyembunyikan elemen HTML
+  </p>
+  <button id="tombol1">sembunyi</button>
+  <script> 
+  // memastikan dokumen html sudah siap
+  $(document).ready(function(){
+    //menyembunyikan paragraf
+    $("#tombol1").click(function(){
+      $("#elemen1").hide()
+    })
+  })
+</script>
+</body>
+</html>
